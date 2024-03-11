@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Navbar = () => {
+
+  const [nav, setNav] = useState(false)
+
+  const handleNav = () => {
+    setNav(!nav)
+  }
   return (
-    <div className="navbar bg-base-100">
-    <div className="flex-1">
-      <a className="btn btn-ghost text-xl">daisyUI</a>
+    <div className="bg-white/80 shadow-md fixed top-0 left-0 w-full z-40 ease-in duration-300 backdrop-blur-md">
+    <div className="py-3 px-10 sm:px-4 md:px-6 lg:px-6 ">
+     <div className="container mx-auto flex item-center justify-between">
+      <img src="" alt="" />
+     </div>
     </div>
     <div className="flex-none gap-2">
       <div className="form-control">
